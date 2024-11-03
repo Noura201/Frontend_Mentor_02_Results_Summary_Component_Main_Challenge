@@ -34,7 +34,7 @@ Users should be able to:
 ### Links
 
 - Frontend Mentor Solution URL: (https://www.frontendmentor.io/solutions/fmnewbie-challengesrecipe-page-main-rjfgxnWjPw)
-- Live Site URL: (https://noura201.github.io/Frontend_Mentor_01_Recipe_Page_Main_Challenge/)
+- Live Site URL: (https://noura201.github.io/Frontend_Mentor_02_Results_Summary_Component_Main_Challenge/)
 - MyPersonal Linkedin URL: (https://www.linkedin.com/in/noura-mamdouh-8a81982a4/)
 
 ## My process
