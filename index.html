@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="master.css" />
+    <title>Results Summary Component Main</title>
+  </head>
+  <script>
+    // Fetch the JSON file
+    fetch("data.json")
+      .then((Response) => Response.json())
+      .then((data) => {
+        // ----- RowOne  -----
+        document.getElementById("category_1").textContent = `${data[0].category_1}`;
+        document.getElementById("score_1").textContent = `${data[0].score_1}`;
+        // Get the URL from the JSON data
+        const iconOneURL = data[0].icon_1;
+        // Create an img element
+        const img1 = document.createElement("img");
+        img1.src = iconOneURL;
+        img1.alt = "IconOne";
+        document.getElementById("icon_1").appendChild(img1);
+
+        // ----- RowTwo  -----
+        document.getElementById("category_2").textContent = `${data[1].category_2}`;
+        document.getElementById("score_2").textContent = `${data[1].score_2}`;
+        const iconTwoURL = data[1].icon_2;
+        const img2 = document.createElement("img");
+        img2.src = iconTwoURL;
+        img2.alt = "IconTwo";
+        document.getElementById("icon_2").appendChild(img2);
+
+        // ----- RowThree  -----
+        document.getElementById("category_3").textContent = `${data[2].category_3}`;
+        document.getElementById("score_3").textContent = `${data[2].score_3}`;
+        const iconThreeURL = data[2].icon_3;
+        const img3 = document.createElement("img");
+        img3.src = iconThreeURL;
+        img3.alt = "IconThree";
+        document.getElementById("icon_3").appendChild(img3);
+
+        // ----- RowFour  -----
+        document.getElementById("category_4").textContent = `${data[3].category_4}`;
+        document.getElementById("score_4").textContent = `${data[3].score_4}`;
+        const iconFourURL = data[3].icon_4;
+        const img4 = document.createElement("img");
+        img4.src = iconFourURL;
+        img4.alt = iconFourURL;
+        document.getElementById("icon_4").appendChild(img4);
+
+        // ----- totalScore  -----
+        document.getElementById("total_score").textContent = `${Math.round((data[0].score_1 + data[1].score_2 + data[2].score_3 + data[3].score_4)/4)}`;
+      })
+      .catch((error) => console.error(`Error Fetching JSON:`, error));
+  </script>
+  <body>
+    <main>
+      <section class="left-sec">
+        <h2 class="result-head">Your Result</h2>
+        <button class="total-score-button">
+          <h1 id="total_score"></h1>
+          <p>of 100</p>
+        </button>
+        <h1 class="great-head">Great</h1>
+        <p>You scored higher than 65% of</p>
+        <p>the people who have taken</p>
+        <p>these tests.</p>
+      </section>
+      <section class="right-sec">
+        <h2 class="summary">Summary</h2>
+        <div class="container">
+          <div class="rowOne">
+            <div id="icon_1"></div> 
+            <div id="category_1"></div>
+            <div id="score_1"></div>
+            <span class="span_1">/ 100</span>
+          </div>
+          <div class="rowTwo">
+            <div id="icon_2"></div> 
+            <div id="category_2"></div>
+            <div id="score_2"></div>
+            <span class="span_2">/ 100</span>
+          </div>
+          <div class="rowThree">
+            <div id="icon_3"></div> 
+            <div id="category_3"></div>
+            <div id="score_3"></div>
+            <span class="span_3">/ 100</span>
+          </div>
+          <div class="rowFour">
+            <div id="icon_4"></div> 
+            <div id="category_4"></div>
+            <div id="score_4"></div>
+            <span class="span_4">/ 100</span>
+          </div>
+        </div><br>
+        <button class="continue-button">Continue</button>
+      </section>
+    </main>
+  </body>
+</html>

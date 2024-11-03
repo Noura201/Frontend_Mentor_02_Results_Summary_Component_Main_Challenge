@@ -1,0 +1,206 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url('assets/fonts/HankenGrotesk-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: 'HankenGrotesk-ExtraBold';
+    src: url('assets/fonts/static/HankenGrotesk-ExtraBold.ttf')
+}
+@font-face {
+    font-family: 'HankenGrotesk-Bold';
+    src: url('assets/fonts/static/HankenGrotesk-Bold.ttf');
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    background-color: #F5F5F5;
+}
+main {
+    height: 508px;
+    width: calc(2 * 368.625px);
+    margin: 286px 351.375px;
+    border-top-left-radius: 30px;
+    border-radius: 30px;
+    background-color: white;
+}
+.left-sec,
+.right-sec {
+    height: inherit;
+    width: 368.625px;
+    float: left;
+}
+.left-sec {
+    border-radius: 30px;
+    background: linear-gradient(
+        to top,
+        hsl(241, 81%, 54%),
+        hsl(252, 100%, 67%)
+    )
+}
+.right-sec {
+    background-color: white;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.left-sec .result-head {
+    font-family: 'HankenGrotesk';
+    margin-top: 50px;
+    font-weight: 700;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+.left-sec .total-score-button {
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 94.3125px;
+    margin-right: 94.3125px;
+    width: 180px;
+    height: 180px;
+    text-align: center;
+    border: transparent;
+    border-radius: 50%;
+    background: linear-gradient(
+        to bottom,
+        hsla(256, 72%, 46%, 1),
+        hsla(241, 72%, 46%, 0)
+    ) 
+}
+.left-sec button h1 {
+    margin-top: -1px;
+    font-family: 'HankenGrotesk-ExtraBold';
+    font-size: xxx-large;
+    color: hsl(0, 0%, 100%);
+}
+.left-sec button p {
+    margin-top: -35px;
+    font-size: medium;
+    font-weight: 700;
+    color: #AAA;
+}
+.left-sec .great-head {
+    font-family: 'HankenGrotesk-ExtraBold';
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 900;
+    color: hsl(0, 0%, 100%);
+}
+.left-sec p {
+    text-align: center;
+    font-family: 'HankenGrotesk';
+    color: rgb(200,200,200);
+    line-height: 35%;
+}
+.right-sec .summary {
+    font-family: 'HankenGrotesk';
+    margin-top: 50px;
+    margin-left: 40px;
+    opacity: 95%;
+    color: hsl(224, 30%, 27%);
+}
+.container 
+.rowOne,
+.rowTwo,
+.rowThree,
+.rowFour {
+    font-family: 'HankenGrotesk';
+    padding: 18px;
+    margin: 18px 40px 0;
+    padding-right: 0;
+    height: 18px;
+    border-radius: 10px;
+}
+.rowOne {
+    background-color: hsl(0, 100%, 67%, 8%);
+}
+.rowTwo {
+    background-color: hsl(39, 100%, 56%, 8%);
+}
+.rowThree {
+    background-color: hsl(166, 100%, 37%, 8%);
+}
+.rowFour {
+    background-color: hsl(234, 85%, 45%, 8%);
+}
+#category_1 {
+    color: hsl(0, 100%, 67%);
+}
+#category_2 {
+    color: hsl(39, 100%, 56%);
+}
+#category_3 {
+    color: hsl(166, 100%, 37%);
+}
+#category_4 {
+    color: hsl(234, 85%, 45%);
+}
+#icon_1,
+#icon_2,
+#icon_3,
+#icon_4 {
+    opacity: 75%;
+}
+#category_1,
+#category_2,
+#category_3,
+#category_4 {
+    opacity: 90%;
+    font-weight: 600;
+    margin-left: 10px;
+}
+#score_1,
+#score_2,
+#score_3,
+#score_4 {
+    opacity: 90%;
+    font-weight: 700;
+}
+#score_1 {
+    margin-left: 85px;
+}
+#score_2 {
+    margin-left: 88px;
+}
+#score_3 {
+    margin-left: 102px;
+}
+#score_4 {
+    margin-left: 104px;
+}
+.span_1,
+.span_2,
+.span_3,
+.span_4 {
+    margin-left: 8px;
+    font-weight: 700;
+    opacity: 35%;
+}
+.rowOne #icon_1, #category_1, #score_1, .span_1,
+.rowTwo #icon_2, #category_2, #score_2, .span_2,
+.rowThree #icon_3, #category_3, #score_3, .span_3,
+.rowFour #icon_4, #category_4, #score_4, .span_4
+{
+    float: left;
+}
+.right-sec .continue-button {
+    font-family: 'HankenGrotesk';
+    font-size: large;
+    height: 58px;
+    width: 288.625px;
+    margin: 15px 40px;
+    border-radius: 30px;
+    border-width: 1px;
+    border-color: hsla(256, 72%, 46%, 1); 
+    cursor: pointer;
+    color: white;
+    background-color: hsl(224, 30%, 27%);
+}
+
+
+.right-sec .continue-button:hover {
+    background: linear-gradient(
+        hsl(252, 100%, 67%),
+        hsl(241, 81%, 54%)
+    )
+}
+
